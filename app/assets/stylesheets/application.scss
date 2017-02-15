@@ -15,5 +15,94 @@
  */
 
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$dark: #2B1C59;
+$light: #778899;
+$brownie: #998877;
+
+
+::-webkit-input-placeholder {
+    color: black;
+  }
+
+.logo {
+  display: inline-block;
+  color: white;
+  letter-spacing: 20px;
+}
+.dark {
+  background-color: $dark;
+}
+
+
+header  {
+  color: white;
+  a {
+    color: white;
+  }
+  ul#store-nav {
+    display: inline-block;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+    }
+  }
+  ul#user-nav {
+    display: inline-block;
+    padding: 0;
+    float: right;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+    }
+  }
+ }
+
+.btn {
+ border: 2px solid $dark;
+ border-radius: 0;
+ background-color: white;
+ color: $dark;
+ display: inline-block;
+ transition: 1s;
+ &:hover {
+   background-color: lighten($dark, 10%);
+   color: white;
+ }
+}
+
+input.my-form {
+  border: none;
+  border-bottom: 2px solid $dark;
+  border-radius: 0;
+  outline: 0;
+  box-shadow: 0;
+  background: transparent;
+  width: 80%;
+
+  transition: 1s;
+  &:focus {
+    outline: none;
+    width: 100%;
+  }
+}
+.alert{
+  background-color: $light;
+  position: absolute;
+  top: 100px;
+  right:  100px;
+  border: 2px solid $dark;
+  z-index: 1000;
+  height: 100px;
+  width: 300px;
+}
+.alert-flash{
+    color: darkgreen;
+}
+.alert-alert{
+    color: darkred;
+}

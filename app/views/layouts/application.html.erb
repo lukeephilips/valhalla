@@ -9,7 +9,38 @@
   </head>
 
   <body>
-    
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>">
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="container-fluid dark">
+      <h1 class="logo">VALHALLA</h1>
+      <header class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <ul id="store-nav">
+              <li><%= link_to "Products", "#" %></li>
+              <li><%= link_to "Locations", "#" %></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul id="user-nav">
+              <% if current_user %>
+                <li><%= link_to "Sign Out", destroy_user_session_path, method: 'delete' %></li>
+              <% else %>
+                <li><%= link_to "Sign In", new_user_session_path %></li>
+              <% end %>
+              <li><%= link_to "Cart", "#" %></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+
     <%= yield %>
   </body>
 </html>
