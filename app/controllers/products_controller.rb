@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
   end
 
   def index
+    # @products = Product.brand("Burton")
     @products = Product.all
   end
 
@@ -77,6 +78,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :category, :brand, :price, :stock)
+      params.require(:product).permit(:name, :category, :brand, :price, :stock, :image)
     end
 end
