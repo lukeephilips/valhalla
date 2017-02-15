@@ -37,11 +37,26 @@ $brownie: #998877;
   background-color: $dark;
 }
 
-
+a {
+  color: $dark;
+  &:hover {
+    opacity: .9;
+    background-color: transparent;
+    color: $dark;
+    text-decoration: none;
+  }
+}
 header  {
   color: white;
   a {
     color: white;
+    &:hover {
+      color: white;
+      opacity: .9;
+    }
+    &:visited {
+      color: white;
+    }
   }
   ul#store-nav {
     display: inline-block;
