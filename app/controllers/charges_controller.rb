@@ -6,9 +6,7 @@ class ChargesController < ApplicationController
 
   def create
     # Amount in cents
-    byebug
-    amount = params[:stripeAmount].to_i * 100
-
+    amount = params[:amount].to_i * 100
     # Create the customer in Stripe
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
@@ -22,8 +20,10 @@ class ChargesController < ApplicationController
       description: 'Rails Stripe customer',
       currency: 'usd'
     )
-    # place more code upon successfully creating the charge
-  rescue Stripe::CardError => e
+    current_user.carts.each { |x| x.destroy }
+    flash[:notice] = "Your card has been charged $#{params[:amount]}. Check yr e-mail for a receipt. Email dingdong@gmail.com if you have any questions :)"
+    redirect_to root_path
+   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to charges_path
     flash[:notice] = "Please try again brah"

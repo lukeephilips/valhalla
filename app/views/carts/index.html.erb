@@ -17,7 +17,7 @@
    <article>
        <%= label_tag 'amount', 'To Pay', class: 'amount' %>
        <%= label_tag 'amount', "$#{@amount}", class: 'amount-figure' %>
-       <%= hidden_field_tag 'amount', value: @amount %>
+       <%= hidden_field_tag 'amount', @amount %>
    </article>
 
    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
