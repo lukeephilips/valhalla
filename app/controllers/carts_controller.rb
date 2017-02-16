@@ -1,11 +1,9 @@
 class CartsController < ApplicationController
-  # def show
-  #   @user = current_user
-  #   @product = Product.find(params[:product_id])
-  #   @cart = Cart.new
-  # end
   def index
     @user = current_user
+    total =0
+    @user.carts.each {|x| total += x.product.price}
+    @amount = total
   end
 
   def create
