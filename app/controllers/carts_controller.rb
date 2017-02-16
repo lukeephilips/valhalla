@@ -20,4 +20,10 @@ class CartsController < ApplicationController
       redirect_to product_path(@product)
     end
   end
+  def destroy
+    cart = Cart.find(params[:id])
+    cart.destroy
+    flash[:alert] = "removed from your cart"
+    redirect_to carts_path
+  end
 end

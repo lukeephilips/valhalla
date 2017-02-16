@@ -1,6 +1,8 @@
 <div class="container">
   <ul id="product-sort">
-    <li><%= link_to "All", products_path(category: @products[0].category) %></li>
+    <% if params[:brand] %>
+      <li><%= link_to "All", products_path(category: @products[0].category) %></li>
+    <% end %>
     <% @brands.each do |b| %>
     <li><%= link_to b, products_path(brand: b, category: @products[0].category) %></li>
     <% end %>

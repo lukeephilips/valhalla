@@ -22,6 +22,7 @@
 $dark: #2B1C59;
 $light: #778899;
 $brownie: #998877;
+$spear: #98ffcc;
 
 
 ::-webkit-input-placeholder {
@@ -81,9 +82,10 @@ header  {
  border: 2px solid $dark;
  border-radius: 0;
  background-color: white;
+ text-transform: uppercase;
  color: $dark;
  display: inline-block;
- transition: 1s;
+ transition: .5s;
  &:hover {
    background-color: lighten($dark, 10%);
    color: white;
@@ -165,6 +167,53 @@ input.my-form {
       text-transform: uppercase;
       &:hover {
         color: $light;
+      }
+    }
+  }
+}
+.back-row {
+  margin-top:25px;
+  a {
+    font-weight: bold;
+    color: darken($dark, 10%);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 2px solid darken($dark, 10%);
+
+  }
+}
+.product-det-row {
+  margin-top: 100px;
+  .product-detail-img {
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  .product-detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .info-wrap{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 50px auto;
+      .price {
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: darken($spear, 20%);
+        margin: 10px 0;
+      }
+      .brand {
+        margin: 10px 0;
+        color: $dark;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+      }
+      .purchase {
+        margin: 10px 0;
       }
     }
   }

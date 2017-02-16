@@ -7,6 +7,8 @@
       <%= image_tag cart.product.image.url(:thumb) %>
       <p><%= cart.product.name %></p>
       <p>Price: $<%= cart.product.price %></p>
+      <%= link_to "Remove from cart", product_cart_path(cart.product, cart), :data => {:confirm => "For sure?",
+        :method => "delete"} %>
     </div>
     <% end %>
     <h3>Cart Total: $<%= total_price %></h3>
