@@ -47,6 +47,16 @@ a {
     text-decoration: none;
   }
 }
+.main-content {
+  margin-top: 100px;
+}
+
+.nav-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000000;
+}
 header  {
   color: white;
   a {
@@ -123,13 +133,45 @@ input.my-form {
 .alert-alert{
     color: darkred;
 }
+
+.product-list-row {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .product-pane {
-  border: 1px solid $dark;
-  border-radius: 10%;
+  padding: 0;
+  padding: 25px 25px;
+  .prod-title {
+    margin-top: 10px;
+    border-top: 5px solid darken($spear, 20%);
+    padding-top: 5px;
+    text-align: center;
+    h4  {
+      display: inline-block;
+      color: $dark;
+      &:first-child {
+        padding-right: 20px;
+      }
+      &:nth-child(2) {
+        border: 2.5px solid $dark;
+        padding: 10px;
+      }
+    }
+    a {
+      color: $dark;
+      text-transform: uppercase;
+    }
+  }
 }
 
 
 .product-drop {
+  position: absolute;
+  width: 100%;
+  z-index: 500;
   display: none;
   background-color: $light;
   color: $dark;
@@ -154,7 +196,7 @@ input.my-form {
 }
 
 #product-sort {
-  margin: 25px 0;
+  margin: 50px 0;
   display: inline-block;
   padding: 0;
   li {

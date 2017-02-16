@@ -1,19 +1,22 @@
 <div class="container">
   <ul id="product-sort">
     <% if params[:brand] %>
-      <li><%= link_to "All", products_path(category: @products[0].category) %></li>
+      <li><%= link_to "All", products_path %></li>
     <% end %>
     <% @brands.each do |b| %>
-    <li><%= link_to b, products_path(brand: b, category: @products[0].category) %></li>
+    <li><%= link_to b, products_path(brand: b) %></li>
     <% end %>
   </ul>
   <!-- <%= link_to "All products", products_path %> -->
-  <div class="row">
+  <div class="row product-list-row">
     <% @products.each do |product| %>
-      <div class="product-pane col-sm-3">
-          <h4><%= link_to "#{product.brand} #{product.name}", product %></h4>
+      <div class="product-pane col-sm-4">
           <%= link_to image_tag(product.image.url(:thumb), class: 'center-block'), product %>
+          <div class="col-sm-12 prod-title">
+              <h4><%= link_to "#{product.brand} #{product.name}", product %></h4>
 
+              <h4> $<%= link_to product.price, product_carts_path(product.id), method: 'post' %></h4>
+          </div>
         <% if current_user.admin == true %>
           <%= link_to 'Edit', edit_product_path(product) %> |
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
