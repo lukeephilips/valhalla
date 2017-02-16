@@ -1,10 +1,10 @@
 <div class="container">
   <ul id="product-sort">
     <% if params[:brand] %>
-      <li><%= link_to "All", products_path %></li>
+      <li><%= link_to "All #{@selected_category}", products_path(category: params[:category]) %></li>
     <% end %>
-    <% @brands.each do |b| %>
-    <li><%= link_to b, products_path(brand: b) %></li>
+    <% all_brands.each do |b| %>
+    <li><%= link_to b, products_path(brand: b, category: params[:category]) %></li>
     <% end %>
   </ul>
   <!-- <%= link_to "All products", products_path %> -->
@@ -14,7 +14,6 @@
           <%= link_to image_tag(product.image.url(:thumb), class: 'center-block'), product %>
           <div class="col-sm-12 prod-title">
               <h4><%= link_to "#{product.brand} #{product.name}", product %></h4>
-
               <h4> $<%= link_to product.price, product_carts_path(product.id), method: 'post' %></h4>
           </div>
         <% if current_user.admin == true %>

@@ -11,7 +11,7 @@ class CartsController < ApplicationController
     @user = current_user
     transaction = @user.carts.new({:product_id => @product.id})
     if transaction.save
-      flash[:notice] = "Shred it brah"
+      flash[:notice] = "#{@product.brand} #{@product.name} added to your cart."
       redirect_to product_path(@product)
     else
       flash[:alert] = transaction.errors.messages

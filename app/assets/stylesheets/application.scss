@@ -23,6 +23,8 @@ $dark: #2B1C59;
 $light: #778899;
 $brownie: #998877;
 $spear: #98ffcc;
+$spearo: rgba(152,255,204,.8);
+$maroon5: rgba(128,0,0,.8);
 
 
 ::-webkit-input-placeholder {
@@ -30,9 +32,16 @@ $spear: #98ffcc;
   }
 
 .logo {
-  display: inline-block;
-  color: white;
+  display: block;
   letter-spacing: 20px;
+  a {
+    color: white;
+    transition: 1s;
+    &:hover {
+      color: $spear;
+      text-decoration: none;
+    }
+  }
 }
 .dark {
   background-color: $dark;
@@ -40,10 +49,10 @@ $spear: #98ffcc;
 
 a {
   color: $dark;
+  transition: 1s;
   &:hover {
-    opacity: .9;
     background-color: transparent;
-    color: $dark;
+    color: $spear;
     text-decoration: none;
   }
 }
@@ -62,25 +71,36 @@ header  {
   a {
     color: white;
     &:hover {
-      color: white;
-      opacity: .9;
+      color: $spear !important;
     }
     &:visited {
       color: white;
     }
   }
   ul#store-nav {
+    margin: 0;
     display: inline-block;
     padding: 0;
+    top: 65px;
+
     li {
+      margin-bottom: 10px;
       display: inline-block;
       padding: 0 15px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
     }
   }
   ul#user-nav {
+    margin: 0;
     display: inline-block;
     padding: 0;
-    float: right;
+    position: absolute;
+    top: 70px;
+    right: 0;
     li {
       display: inline-block;
       padding: 0 15px;
@@ -118,20 +138,37 @@ input.my-form {
   }
 }
 .alert{
-  background-color: $light;
+  background-color: $spearo;
   position: absolute;
-  top: 100px;
+  top: 55px;
   right:  100px;
   border: 2px solid $dark;
-  z-index: 1000;
+  z-index: 10000000000000;
   height: 100px;
   width: 300px;
+  animation-name: slider;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  .message {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .x {
+    height: 15px;
+    display: block;
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 .alert-flash{
-    color: darkgreen;
+  color: $dark;
 }
 .alert-alert{
-    color: darkred;
+
+  background-color: $maroon5;
+  color: white;
 }
 
 .product-list-row {
@@ -177,6 +214,7 @@ input.my-form {
   color: $dark;
   ul#product-cat {
     margin-top: 10px;
+    margin-left: 0;
     display: inline-block;
     padding: 0;
     li {
@@ -259,4 +297,17 @@ input.my-form {
       }
     }
   }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@keyframes slider {
+  0% {
+   transform: translateX(+100%)
+ }
+ 100% {
+   transform: translateX(0)
+ }
 }

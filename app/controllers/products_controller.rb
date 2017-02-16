@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.filter(params.slice(:brand, :category))
     @brands = @products.distinct.pluck(:brand)
+    @selected_category = params[:category]
   end
 
 
