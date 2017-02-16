@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <h1><%= @user.name %>'s Cart</h1>
+
+    <% @user.carts.each do |cart| %>
+    <div class="col-sm-3">
+      <%= image_tag cart.product.image.url(:thumb) %>
+      <p><%= cart.product.name %></p>
+      <p>Price: $<%= cart.product.price %></p>
+    </div>
+    <% end %>
+    <h3>Cart Total: $<%= total_price %></h3>
+  </div>
+</div>

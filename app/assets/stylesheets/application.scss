@@ -125,3 +125,47 @@ input.my-form {
   border: 1px solid $dark;
   border-radius: 10%;
 }
+
+
+.product-drop {
+  display: none;
+  background-color: $light;
+  color: $dark;
+  ul#product-cat {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      a {
+        color: $dark;
+        font-weight: bold;
+        &:hover {
+          color: white;
+
+
+        }
+      }
+    }
+  }
+}
+
+#product-sort {
+  margin: 25px 0;
+  display: inline-block;
+  padding: 0;
+  li {
+    display: inline-block;
+    padding: 0 15px;
+    a {
+      color: $dark;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+}
