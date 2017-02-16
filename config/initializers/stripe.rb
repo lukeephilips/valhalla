@@ -1,6 +1,6 @@
 Rails.configuration.stripe = {
-    :publishable_key => ENV.fetch('STRIPE_TEST_PUBLISH'),
-    :secret_key      => ENV.fetch('STRIPE_TEST_SECRET')
+    :publishable_key => ENV.fetch('PUBLISHABLE_KEY'),
+    :secret_key      => ENV.fetch('SECRET_KEY')
 }
 
-Stripe.api_key = ENV.fetch('STRIPE_TEST_SECRET')
+Stripe.api_key = ENV.fetch('SECRET_KEY')
