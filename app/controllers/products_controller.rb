@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, except: [:index, :show]
   before_filter :is_admin?, except: [:index, :show]
-
   def is_admin?
     if current_user.admin
       current_user

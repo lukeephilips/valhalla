@@ -1,4 +1,6 @@
 class CartsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @user = current_user
     total =0
@@ -12,10 +14,10 @@ class CartsController < ApplicationController
     transaction = @user.carts.new({:product_id => @product.id})
     if transaction.save
       flash[:notice] = "#{@product.brand} #{@product.name} added to your cart."
-      redirect_to product_path(@product)
+      redirect_to :back
     else
       flash[:alert] = transaction.errors.messages
-      redirect_to product_path(@product)
+      redirect_to :back
     end
   end
   def destroy

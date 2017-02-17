@@ -6,4 +6,7 @@ class User < ApplicationRecord
   has_many :carts
   has_many :products, :through => :carts
 
+  # def empty_carts
+  #   self.carts.each{|x| x.destroy}
+  # end
 end
