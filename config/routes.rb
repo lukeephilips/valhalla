@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   end
   resources :carts, :only => [:index]
   devise_for :users
-  root to: 'home#index'
+  root to: 'products#index'
 
   resources :charges
 
