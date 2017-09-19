@@ -12,70 +12,70 @@ boards = [
   brand: "Burton",
   price: 450,
   stock: 40,
-  image: File.new("#{Rails.root}/app/assets/images/burtonv.jpg")
+  image: File.new("#{Rails.root}/assets/images/burtonv.jpg")
   },{
   name:"Ripcord",
   category:"board",
   brand: "Burton",
   price: 380,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/ripcord.jpg")
+  image: File.new("#{Rails.root}/assets/images/ripcord.jpg")
   },{
   name:"T. Rice Climax",
   category:"board",
   brand: "Lib Tech",
   price: 1000,
   stock: 100,
-  image: File.new("#{Rails.root}/app/assets/images/trice.jpg")
+  image: File.new("#{Rails.root}/assets/images/trice.jpg")
   },{
   name:"Element",
   category:"board",
   brand: "Arbor",
   price: 400,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/element.jpg")
+  image: File.new("#{Rails.root}/assets/images/element.jpg")
   },{
   name:"Lando Phoenix",
   category:"board",
   brand: "Lib Tech",
   price: 600,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/lando.jpg")
+  image: File.new("#{Rails.root}/assets/images/lando.jpg")
   },{
   name:"Cadence",
   category:"board",
   brand: "Arbor",
   price: 400,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/cadence.jpg")
+  image: File.new("#{Rails.root}/assets/images/cadence.jpg")
   },{
   name:"Foundation",
   category:"board",
   brand: "Arbor",
   price: 320,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/foundation.jpg")
+  image: File.new("#{Rails.root}/assets/images/foundation.jpg")
   },{
   name:"Chicklet",
   category:"board",
   brand: "Burton",
   price: 200,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/chicklet.jpg")
+  image: File.new("#{Rails.root}/assets/images/chicklet.jpg")
   },{
   name:"Family Tree",
   category:"board",
   brand: "Burton",
   price: 680,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/familytree.jpg")
+  image: File.new("#{Rails.root}/assets/images/familytree.jpg")
   },{
   name:"Flight Attendant",
   category:"board",
   brand: "Burton",
   price: 550,
   stock: 80,
-  image: File.new("#{Rails.root}/app/assets/images/flightattendant.jpg")
+  image: File.new("#{Rails.root}/assets/images/flightattendant.jpg")
   }
 ]
 boots =[
@@ -85,7 +85,7 @@ boots =[
     brand: "Burton",
     price: 450,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/almighty.jpg")
+    image: File.new("#{Rails.root}/assets/images/almighty.jpg")
   },
   {
     name:"TM-Two XLT",
@@ -93,7 +93,7 @@ boots =[
     brand: "32",
     price: 350,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/tm2.jpg")
+    image: File.new("#{Rails.root}/assets/images/tm2.jpg")
   },
   {
     name:"Focus",
@@ -101,7 +101,7 @@ boots =[
     brand: "32",
     price: 390,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/focus.jpg")
+    image: File.new("#{Rails.root}/assets/images/focus.jpg")
   },
   {
     name:"Lashed",
@@ -109,7 +109,7 @@ boots =[
     brand: "32",
     price: 300,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/lashed.jpg")
+    image: File.new("#{Rails.root}/assets/images/lashed.jpg")
   },
   {
     name:"Moto",
@@ -117,7 +117,7 @@ boots =[
     brand: "Burton",
     price: 230,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/moto.jpg")
+    image: File.new("#{Rails.root}/assets/images/moto.jpg")
   },
   {
     name:"Imperial",
@@ -125,7 +125,7 @@ boots =[
     brand: "Burton",
     price: 340,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/imperial.jpg")
+    image: File.new("#{Rails.root}/assets/images/imperial.jpg")
   }
 ]
 bindings =[
@@ -135,7 +135,7 @@ bindings =[
     brand: "Burton",
     price: 450,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/genesis.jpg")
+    image: File.new("#{Rails.root}/assets/images/genesis.jpg")
   },
   {
     name:"Falcor",
@@ -143,7 +143,7 @@ bindings =[
     brand: "Union",
     price: 330,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/falcor.jpg")
+    image: File.new("#{Rails.root}/assets/images/falcor.jpg")
   },
   {
     name:"Arc",
@@ -151,7 +151,7 @@ bindings =[
     brand: "Spark R&D",
     price: 385,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/arc.jpg")
+    image: File.new("#{Rails.root}/assets/images/arc.jpg")
   },
   {
     name:"Citizen",
@@ -159,7 +159,7 @@ bindings =[
     brand: "Burton",
     price: 150,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/citizen.jpg")
+    image: File.new("#{Rails.root}/assets/images/citizen.jpg")
   },
   {
     name:"Flite Pro",
@@ -167,7 +167,7 @@ bindings =[
     brand: "Union",
     price: 150,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/flite.jpg")
+    image: File.new("#{Rails.root}/assets/images/flite.jpg")
   },
   {
     name:"Force",
@@ -175,7 +175,7 @@ bindings =[
     brand: "Union",
     price: 230,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/force.jpg")
+    image: File.new("#{Rails.root}/assets/images/force.jpg")
   }
 ]
 accessories =[
@@ -185,7 +185,7 @@ accessories =[
     brand: "Von Zipper",
     price: 260,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/jetpack.jpg")
+    image: File.new("#{Rails.root}/assets/images/jetpack.jpg")
   },
   {
     name:"Skylab Goggles",
@@ -193,7 +193,7 @@ accessories =[
     brand: "Von Zipper",
     price: 170,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/skylab.jpg")
+    image: File.new("#{Rails.root}/assets/images/skylab.jpg")
   },
   {
     name:"Legacy Goggles",
@@ -201,7 +201,7 @@ accessories =[
     brand: "Spy",
     price: 230,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/legacy.jpg")
+    image: File.new("#{Rails.root}/assets/images/legacy.jpg")
   },
   {
     name:"Tracker2 Avalanche Beacon",
@@ -209,7 +209,7 @@ accessories =[
     brand: "BCA",
     price: 300,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/tracker.jpg")
+    image: File.new("#{Rails.root}/assets/images/tracker.jpg")
   },
   {
     name:"Stealth Avalanche Probe",
@@ -217,7 +217,7 @@ accessories =[
     brand: "BCA",
     price: 70,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/stealth.jpg")
+    image: File.new("#{Rails.root}/assets/images/stealth.jpg")
   },
   {
     name:"Igniter Helmet",
@@ -225,7 +225,7 @@ accessories =[
     brand: "Sweet Protection",
     price: 240,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/igniter.jpg")
+    image: File.new("#{Rails.root}/assets/images/igniter.jpg")
   },
   {
     name:"Aluminum Stud Stomp Pad",
@@ -233,7 +233,7 @@ accessories =[
     brand: "Burton",
     price: 15,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/stomp.jpg")
+    image: File.new("#{Rails.root}/assets/images/stomp.jpg")
   },
   {
     name:"Struttin Jacket",
@@ -241,7 +241,7 @@ accessories =[
     brand: "The North Face",
     price: 250,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/struttin.jpg")
+    image: File.new("#{Rails.root}/assets/images/struttin.jpg")
   },
   {
     name:"Gatekeeper Jacket",
@@ -249,7 +249,7 @@ accessories =[
     brand: "The North Face",
     price: 300,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/gatekeeper.jpg")
+    image: File.new("#{Rails.root}/assets/images/gatekeeper.jpg")
   },
   {
     name:"Covert Jacket",
@@ -257,7 +257,7 @@ accessories =[
     brand: "Burton",
     price: 200,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/covert.jpg")
+    image: File.new("#{Rails.root}/assets/images/covert.jpg")
   },
   {
     name:"Freedom Pants",
@@ -265,7 +265,7 @@ accessories =[
     brand: "The North Face",
     price: 140,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/freedom.jpg")
+    image: File.new("#{Rails.root}/assets/images/freedom.jpg")
   },
   {
     name:"Parkway Pants",
@@ -273,7 +273,7 @@ accessories =[
     brand: "Burton",
     price: 100,
     stock: 80,
-    image: File.new("#{Rails.root}/app/assets/images/parkway.jpg")
+    image: File.new("#{Rails.root}/assets/images/parkway.jpg")
   }
 ]
 
