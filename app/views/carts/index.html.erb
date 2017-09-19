@@ -21,7 +21,7 @@
    </article>
 
    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="<%= ENV.fetch('STRIPE_TEST_PUBLISH') %>"
+      data-key="<%= ENV.fetch('PUBLISHABLE_KEY') %>"
       data-description="Your payment description"
       data-amount="<%= @amount * 100 %>">
     </script>

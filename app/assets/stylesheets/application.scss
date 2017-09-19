@@ -140,11 +140,11 @@ input.my-form {
 .alert{
   background-color: $spearo;
   position: absolute;
-  top: 55px;
+  top: 100px;
   right:  100px;
   border: 2px solid $dark;
   z-index: 10000000000000;
-  height: 100px;
+  height: contain;
   width: 300px;
   animation-name: slider;
   animation-duration: .5s;
