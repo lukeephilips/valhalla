@@ -7,9 +7,6 @@
     <li><%= link_to b, products_path(brand: b, category: params[:category]) %></li>
     <% end %>
   </ul>
-  <!-- <%= link_to "All products", products_path %> -->
-  <h1>BINGO</h1>
-  <img src="http://s3.amazonaws.com/valhallaluke/burtonv.jpg" alt="herf">
   <div class="row product-list-row">
     <% @products.each do |product| %>
       <div class="product-pane col-sm-4">
