@@ -26,8 +26,9 @@ Product.create(
   stock: 80,
   image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/ripcord.jpg")
   })
-  counter += 1
-  f_counter = counter.to_s.rjust(3,'0')
+
+counter += 1
+f_counter = counter.to_s.rjust(3,'0')
 Product.create(
 {
   name:"T. Rice Climax",
@@ -377,4 +378,4 @@ Product.create(
     price: 100,
     stock: 80,
     image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/parkway.jpg")
-  }
+  })
