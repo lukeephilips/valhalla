@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 counter = 1
+f_counter = counter.to_s.rjust(3,'0')
 Product.create(
   {
   name:"Flying V",
@@ -13,7 +14,7 @@ Product.create(
   brand: "Burton",
   price: 450,
   stock: 40,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/burtonv.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/burtonv.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -24,7 +25,7 @@ Product.create(
   brand: "Burton",
   price: 380,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/ripcord.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/ripcord.jpg")
   })
 
 counter += 1
@@ -36,7 +37,7 @@ Product.create(
   brand: "Lib Tech",
   price: 1000,
   stock: 100,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/trice.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/trice.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -47,7 +48,7 @@ Product.create(
   brand: "Arbor",
   price: 400,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/element.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/element.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -58,7 +59,7 @@ Product.create(
   brand: "Lib Tech",
   price: 600,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/lando.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/lando.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -69,7 +70,7 @@ Product.create(
   brand: "Arbor",
   price: 400,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/cadence.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/cadence.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -80,7 +81,7 @@ Product.create(
   brand: "Arbor",
   price: 320,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/foundation.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/foundation.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -91,7 +92,7 @@ Product.create(
   brand: "Burton",
   price: 200,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/chicklet.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/chicklet.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -102,7 +103,7 @@ Product.create(
   brand: "Burton",
   price: 680,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/familytree.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/familytree.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -113,7 +114,7 @@ Product.create(
   brand: "Burton",
   price: 550,
   stock: 80,
-  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/flightattendant.jpg")
+  image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/flightattendant.jpg")
   })
   counter += 1
   f_counter = counter.to_s.rjust(3,'0')
@@ -124,7 +125,7 @@ Product.create(
     brand: "Burton",
     price: 450,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/almighty.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/almighty.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -135,7 +136,7 @@ Product.create(
     brand: "32",
     price: 350,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/tm2.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/tm2.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -146,7 +147,7 @@ Product.create(
     brand: "32",
     price: 390,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/focus.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/focus.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -157,7 +158,7 @@ Product.create(
     brand: "32",
     price: 300,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/lashed.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/lashed.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -168,7 +169,7 @@ Product.create(
     brand: "Burton",
     price: 230,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/moto.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/moto.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -179,7 +180,7 @@ Product.create(
     brand: "Burton",
     price: 340,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/imperial.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/imperial.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -190,7 +191,7 @@ Product.create(
     brand: "Burton",
     price: 450,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/genesis.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/genesis.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -201,7 +202,7 @@ Product.create(
     brand: "Union",
     price: 330,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/falcor.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/falcor.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -212,7 +213,7 @@ Product.create(
     brand: "Spark R&D",
     price: 385,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/arc.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/arc.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -223,7 +224,7 @@ Product.create(
     brand: "Burton",
     price: 150,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/citizen.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/citizen.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -234,7 +235,7 @@ Product.create(
     brand: "Union",
     price: 150,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/flite.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/flite.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -245,7 +246,7 @@ Product.create(
     brand: "Union",
     price: 230,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/force.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/force.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -256,7 +257,7 @@ Product.create(
     brand: "Von Zipper",
     price: 260,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/jetpack.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/jetpack.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -267,7 +268,7 @@ Product.create(
     brand: "Von Zipper",
     price: 170,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/skylab.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/skylab.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -278,7 +279,7 @@ Product.create(
     brand: "Spy",
     price: 230,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/legacy.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/legacy.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -289,7 +290,7 @@ Product.create(
     brand: "BCA",
     price: 300,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/tracker.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/tracker.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -300,7 +301,7 @@ Product.create(
     brand: "BCA",
     price: 70,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/stealth.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/stealth.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -311,7 +312,7 @@ Product.create(
     brand: "Sweet Protection",
     price: 240,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/igniter.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/igniter.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -322,7 +323,7 @@ Product.create(
     brand: "Burton",
     price: 15,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/stomp.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/stomp.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -333,7 +334,7 @@ Product.create(
     brand: "The North Face",
     price: 250,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/struttin.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/struttin.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -344,7 +345,7 @@ Product.create(
     brand: "The North Face",
     price: 300,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/gatekeeper.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/gatekeeper.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -355,7 +356,7 @@ Product.create(
     brand: "Burton",
     price: 200,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/covert.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/covert.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -366,7 +367,7 @@ Product.create(
     brand: "The North Face",
     price: 140,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/freedom.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/freedom.jpg")
     })
     counter += 1
     f_counter = counter.to_s.rjust(3,'0')
@@ -377,5 +378,5 @@ Product.create(
     brand: "Burton",
     price: 100,
     stock: 80,
-    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{counter}/medium/parkway.jpg")
+    image: File.new("http://valhallaluke.s3.amazonaws.com/products/images/000/000/#{f_counter}/medium/parkway.jpg")
   })
